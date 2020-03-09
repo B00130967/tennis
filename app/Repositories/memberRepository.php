@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class memberRepository
  * @package App\Repositories
- * @version February 10, 2020, 3:21 pm UTC
+ * @version March 9, 2020, 4:14 pm UTC
 */
 
 class memberRepository extends BaseRepository
@@ -20,7 +20,8 @@ class memberRepository extends BaseRepository
         'firstname',
         'surname',
         'membertype',
-        'dateofbirth'
+        'dateofbirth',
+        'userid'
     ];
 
     /**
