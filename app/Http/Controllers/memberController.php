@@ -11,6 +11,7 @@ use Flash;
 use Response;
 use Illuminate\Support\Facades\Auth;
 
+
 class memberController extends AppBaseController
 {
     /** @var  memberRepository */
@@ -44,7 +45,7 @@ class memberController extends AppBaseController
         echo "not logged in ";
     }
     }
-    
+
     public function index(Request $request)
     {
         $members = $this->memberRepository->all();
