@@ -20,6 +20,12 @@ class courtratingController extends AppBaseController
         $this->courtratingRepository = $courtratingRepo;
     }
 
+
+    public function ratecourt($courtid)
+    {
+    return view('courtratings.ratecourt')->with('courtid',$courtid);
+    }
+
     /**
      * Display a listing of the courtrating.
      *
