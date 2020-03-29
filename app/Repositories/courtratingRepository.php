@@ -2,24 +2,24 @@
 
 namespace App\Repositories;
 
-use App\Models\court;
+use App\Models\courtrating;
 use App\Repositories\BaseRepository;
 
 /**
- * Class courtRepository
+ * Class courtratingRepository
  * @package App\Repositories
  * @version March 29, 2020, 12:47 pm UTC
 */
 
-class courtRepository extends BaseRepository
+class courtratingRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'surface',
-        'floodlights',
-        'indoor'
+        'rating',
+        'comment',
+        'courtid'
     ];
 
     /**
@@ -37,6 +37,6 @@ class courtRepository extends BaseRepository
      **/
     public function model()
     {
-        return court::class;
+        return courtrating::class;
     }
 }

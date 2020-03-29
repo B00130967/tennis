@@ -14,7 +14,8 @@
             <ul class="nav navbar-nav"> 
                 <li><a href={{ route('members.index')}}>Member List</a></li> 
                 <li><a href={{ route('members.create')}}>New Member</a></li> 
-		<li><a href={{ route('bookings.index')}}>Booking List</a></li> 
+		        <li><a href={{ route('bookings.index')}}>Booking List</a></li> 
+                <li><a href={{ route('calendar.display')}}>Booking Calendar</a></li> 
             </ul> 
         </nav> 
         <div id="page-content-wrapper"> 
